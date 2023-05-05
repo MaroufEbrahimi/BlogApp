@@ -6,5 +6,21 @@ $lightGreen: #b9e7e7;
 
   .container {
     width: 1024px;
+
+    // NAVBAR
+    .navbar {
+      .container {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+          img {
+            width: 120px;
+          }
+        }
+      }
+    }
   }
 }
