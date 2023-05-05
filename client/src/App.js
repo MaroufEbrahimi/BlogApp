@@ -1,11 +1,15 @@
-import React, { Children } from "react"
+import React from "react"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom"
 import Home from "./pages/Home"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 const Layout = () => {
   return (
     <>
+      <Navbar />
       <Outlet />
+      <Footer />
     </>
   )
 }
