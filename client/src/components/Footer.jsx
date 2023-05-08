@@ -1,8 +1,14 @@
-import React from 'react'
+import React from "react"
+import logo from "../images/logo.png"
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <img src={logo} alt="Logo" />
+      <span>
+        Made with Marouf Ebrahimi and <b>React.js</b>
+      </span>
+    </footer>
   )
 }
 
