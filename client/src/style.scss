@@ -61,5 +61,19 @@ $lightGreen: #b9e7e7;
         }
       }
     }
+
+    // FOOTER
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-style: 12px;
+
+      img {
+        height: 50px;
+      }
+    }
   }
 }
