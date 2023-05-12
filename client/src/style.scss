@@ -88,6 +88,10 @@ $lightGreen: #b9e7e7;
           display: flex;
           gap: 100px;
 
+          &:nth-child(2n + 1) {
+            flex-direction: row-reverse;
+          }
+
           .img {
             flex: 2;
             position: relative;
