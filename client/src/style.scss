@@ -167,12 +167,42 @@ $lightGreen: #b9e7e7;
         }
 
         .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 14px;
+
           img {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
           }
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        .edit {
+          display: flex;
+          gap: 5px;
+
+          img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+
+        h1 {
+          font-size: 32px;
+          color: #333;
+        }
+
+        p {
+          text-align: justify;
+          line-height: 30px;
         }
       }
     }
