@@ -7,6 +7,7 @@ import Single from "./pages/Single"
 import Write from "./pages/Write"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import "./style.scss"
 
 const Layout = () => {
   return (
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/post:id",
+        path: "/post/:id",
         element: <Single />,
       },
       {
