@@ -206,5 +206,62 @@ $lightGreen: #b9e7e7;
         }
       }
     }
+
+    // LOGIN & REGISTER
+    .login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: $lightGreen;
+
+      h1 {
+        font-size: 30px;
+        color: teal;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: white;
+        width: 240px;
+        gap: 25px;
+
+        input {
+          padding: 10px;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          letter-spacing: 0.03em;
+          border-bottom: 1px solid gray;
+        }
+
+        button {
+          background-color: teal;
+          border: none;
+          color: white;
+          padding: 10px;
+          font-size: 16px;
+          letter-spacing: 0.03em;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+
+        p {
+          color: red;
+          font-size: 13px;
+          text-align: center;
+        }
+
+        span {
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+    }
   }
 }
