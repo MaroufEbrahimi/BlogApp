@@ -278,5 +278,128 @@ $lightGreen: #b9e7e7;
         }
       }
     }
+
+    // WRITE
+    .add {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      .content {
+        flex: 5;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+        input {
+          padding: 10px;
+          border: 1px solid #d3d3d3;
+        }
+
+        .editorContainer {
+          height: 200px;
+
+          .editor {
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+          }
+        }
+      }
+
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .item {
+          border: 1px solid lightgray;
+          padding: 10px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 12px;
+          color: #555;
+
+          h1 {
+            font-size: 20px;
+          }
+
+          .file {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+
+          .buttons {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+              cursor: pointer;
+              padding: 9px 16px;
+              margin: 1em 0;
+              border-radius: 8px;
+              background-color: $lightGreen;
+              border: none;
+              font-size: 12px;
+              line-height: 1;
+
+              &:hover,
+              &:focus {
+                animation: pulse 0.8s;
+                box-shadow: 0 0 0 1em rgba(#fff, 0);
+              }
+
+              @keyframes pulse {
+                0% {
+                  box-shadow: 0 0 0 0 teal;
+                }
+              }
+            }
+
+            .cat {
+              display: flex;
+              align-items: center;
+              gap: 2px;
+              color: teal;
+            }
+          }
+        }
+      }
+    }
   }
 }
+
+/*
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+button {  
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+*/
