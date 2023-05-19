@@ -4,6 +4,7 @@ import Img3 from "../images/img3.jpg"
 import User1 from "../images/user1.jpg"
 import Edit from "../images/Edit.png"
 import Delete from "../images/Delete.png"
+import Menu from "../components/Menu"
 
 const Single = () => {
   return (
@@ -53,6 +54,8 @@ const Single = () => {
           Laudantium autem aut quibusdam obcaecati cupiditate tempore ut.
         </p>
       </div>
+
+      <Menu />
     </div>
   )
 }
